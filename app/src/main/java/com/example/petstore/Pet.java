@@ -1,15 +1,18 @@
 package com.example.petstore;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Pet {
-    private Category category;
+    private CategoryList category;
     private String id;
     private String name;
-    private PhotoUrls photoUrls;
+    private ArrayList photoUrls;
     private String status;
-    private Tags tags;
+    //private TagList tags;
 
-    public Category getCategory() { return category; }
-    public void setCategory(Category value) { this.category = value; }
+    public CategoryList getCategory() { return category; }
+    public void setCategory(CategoryList value) { this.category = value; }
 
     public String getID() { return id; }
     public void setID(String value) { this.id = value; }
@@ -17,13 +20,13 @@ public class Pet {
     public String getName() { return name; }
     public void setName(String value) { this.name = value; }
 
-    public PhotoUrls getPhotoUrls() { return photoUrls; }
-    public void setPhotoUrls(PhotoUrls value) { this.photoUrls = value; }
+    public ArrayList getPhotoUrls() { return photoUrls; }
+    public void setPhotoUrls(ArrayList value) { this.photoUrls = value; }
 
     public String getStatus() { return status; }
     public void setStatus(String value) { this.status = value; }
 
-    public Tags getTags() { return tags; }
-    public void setTags(Tags value) { this.tags = value; }
+    //public TagList getTags() { return tags; }
+    //public void setTags(TagList value) { this.tags = value; }
 }
 
